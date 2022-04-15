@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENTANDO FAZER UMA CALCULADORA DE  MULTIPLICAÇÃO</title>
+    <style>
+        body {
+            
+            color: rgb(247, 247, 247);
+            text-shadow: 1px 1px 2px black;
+            background-color: rgb(167, 163, 163);
+        }
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        input {
+            width: 100px;
+            font: normal 12pt Arial;
+        }
+
+        div#res {
+            padding-top: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULADORA DE MULTIPLICAÇÃO</h1>
+    <input type="number" name="txtn1" id="txtn1"> x
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Multiplicar" onclick="Multiplicar()"> <!-- no onclick o Multiplicar() é o nome da função que vai executar quando for clicado -->
+    <div id="res">
+        Resultado
+    </div>
+    <script>
+        function Multiplicar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var mult = n1 * n2 
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a ${mult}`
+
+
+
+        }
+    </script>
+</body>
+</html>
