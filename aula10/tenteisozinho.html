@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TENTANDO FAZER UMA CALCULADORA DE  MULTIPLICAÇÃO</title>
     <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body {
             
             color: rgb(247, 247, 247);
@@ -20,17 +25,24 @@
             width: 100px;
             font: normal 12pt Arial;
         }
+        div#centro {
+            margin-top: 50px;
+            margin-left: 25vw;
+        }
 
         div#res {
+            size: 20px;
             padding-top: 20pt;
         }
     </style>
 </head>
 <body>
     <h1>CALCULADORA DE MULTIPLICAÇÃO</h1>
-    <input type="number" name="txtn1" id="txtn1"> x
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Multiplicar" onclick="Multiplicar()"> <!-- no onclick o Multiplicar() é o nome da função que vai executar quando for clicado -->
+    <div id="centro">
+        <input type="number" name="txtn1" id="txtn1"> x
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Multiplicar" onclick="Multiplicar()"> <!-- no onclick o Multiplicar() é o nome da função que vai executar quando for clicado -->
+    </div>
     <div id="res">
         Resultado
     </div>
