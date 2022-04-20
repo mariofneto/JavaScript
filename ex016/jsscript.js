@@ -10,3 +10,4 @@ function verificar() {
         var idade = ano - Number(fano.value)
     }
 }
+    
